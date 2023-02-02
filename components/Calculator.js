@@ -4,8 +4,8 @@ import ShrinkageExample from './ShrinkageExample';
 import Toast from 'react-native-toast-message';
 
 export default function Calculator() {
-  const [shrinkage, setShrinkage] = useState('');
-  const [desiredSize, setDesiredSize] = useState('');
+  const [shrinkage, setShrinkage] = useState(0);
+  const [desiredSize, setDesiredSize] = useState(0);
   return (
     <View style={styles.calcContainer}>
         <View style={styles.row}>
@@ -68,13 +68,11 @@ function calculatePreFireSize(desired, shrinkage) {
 
 const styles = StyleSheet.create({
     calcContainer: {
+        flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        // borderColor: "#f54278", // Temp just to be able to see it
-        // borderWidth: 1
     },
     row: {
-        backgroundColor: '#25292e',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'row',
@@ -87,21 +85,21 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     text: {
-        color: '#fff',
+        color: '#25292e',
         padding: 10,
         fontFamily: 'Cochin',
         fontSize: 20
         
     },
     subtext: {
-      color: '#dedac8',
+      color: '#25292e',
       padding: 10,
       fontFamily: 'Cochin',
       fontSize: 13
       
   },
     textInput: {
-        color: '#fff',
+        color: '#25292e',
         borderColor: "#fff", // Temp just to be able to see it
         borderBottomWidth: 1,
         width: "10%",

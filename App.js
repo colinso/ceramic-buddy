@@ -36,9 +36,7 @@ export default function App() {
           {/* <Box style={styles.bodyContainer}> */}
           <Body selectedTab={selected} />
           {/* </Box> */}
-          <Box>
-            <Footer setTab={(val) => setSelected(val)} />
-          </Box>
+          <Footer setTab={(val) => setSelected(val)} />
           <Toast/>
         </Box>
     </NativeBaseProvider>
@@ -86,7 +84,7 @@ const styles = StyleSheet.create({
   headerText: {
     color: '#fff',
     fontSize: 30,
-    fontFamily: 'Cochin',
+    // fontFamily: 'Cochin',
     textAlign: 'center',
     justifyContent: 'center',
     paddingTop: 20

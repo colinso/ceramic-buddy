@@ -11,7 +11,7 @@ export default function Body({selectedTab}) {
             console.log("Test Tiles")
             return (<TestTiles/>)
         case 2:
-            // code block
+            return (<TestTiles/>)
             break;
         default:
             console.log("Calc")
